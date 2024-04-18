@@ -9,6 +9,11 @@ Similarly, with cloud computing, you need computing resources like processing po
 
 Just like you can plug into the electricity grid and use as much or as little electricity as you need, you can connect to the cloud and access computing resources on-demand, scaling up or down as your needs change. This makes cloud computing convenient, flexible, and cost-effective, similar to using utility services in your everyday life.
 
+* Cloud Providers manage the infrastructure
+* Can tinker with every little bit on what you use
+* Physical severs that you are renting and having access to
+* Typically placed in locations where electricity is cheaper or is colder as these data centers are massive.
+
 
 ## How do we know if something is on the cloud? What is the difference between on-prem and the cloud?
 
@@ -27,7 +32,9 @@ A type of computing where resources are offered by third-party provider, and are
 ![img_1.png](images%2Fimg_1.png)
 
 ### Hybrid Cloud :
-A hybrid cloud is a mixed computing environment where applications are run using a combination of computing, storage, and services in different environments. An example can be using AWS with multiple different services, such as S3 and EC2.
+A hybrid cloud is a mixed computing environment where applications are run using a combination of computing, storage, and services in different environments. An example can be using AWS's services alongside with on-prem databases.
+
+![img_4.png](images%2Fimg_4.png)
 
 ### Multi Cloud :
 When an organisation uses cloud computing services from at least two cloud providers to run their applications.
