@@ -30,7 +30,7 @@ A type of computing where resources are offered by third-party provider, and are
 A hybrid cloud is a mixed computing environment where applications are run using a combination of computing, storage, and services in different environments. An example can be using AWS with multiple different services, such as S3 and EC2.
 
 ### Multi Cloud :
-When an organisation uses cloud computing services from at least two cloud providers to run their applications
+When an organisation uses cloud computing services from at least two cloud providers to run their applications.
 
 ## Types of Cloud Services
 
@@ -38,7 +38,7 @@ When an organisation uses cloud computing services from at least two cloud provi
 
 * Provides virtualised computing resources over the internet.
 * Users manage and control the operating systems, applications, and development frameworks.
-* Offers scalability and flexibility in managing virtualized resources.
+* Offers scalability and flexibility in managing virtualised resources.
 * Example Providers: AWS EC2, Microsoft Azure VMs, Google Compute Engine.
 
 
@@ -106,3 +106,28 @@ In summary, IaaS provides virtualised resources for users to manage and control,
 * Businesses pay for cloud services as operational expenses.
 * Reduces upfront investment in hardware and infrastructure.
 * Enables flexibility, scalability, and focus on innovation.
+
+
+## Is migrating to the cloud always cheaper?
+
+There are a lot of advantages when migrating to the cloud related to costs. These include:
+* Reduced Capital Expenditure - Eliminates the need for upfront investment
+* Pay as you go model - Pay for only the resources you use
+* Scalability and Flexibility - Allows businesses to scale up or down based on demand
+* Reduces maintenance or management costs - Third party companies such as the cloud provider will handle maintaining the infrastructure
+
+However, it is not always cheaper for the business to migrate. These costs can include:
+* Usage Patterns and hard to predict - There can be unexpected spikes in usage, leading to higher bills
+* Data transfer and storage costs - Transitioning between cloud providers can be complex and very costly, offsetting the initial cost savings
+* Compliance and Security requirements - May require additional investments to meet security requirement
+
+## What Are the 3 Largest Cloud Providers? What makes them so popular?
+Currently, the biggest 3 cloud providers are Amazon Web Services (AWS), Google Cloud Platform (GCP) and Microsoft Azure. Together they take up 66% of the worldwide cloud infrastructure market.
+### AWS:
+* Extensive range of services and global infrastructure.
+* Strong ecosystem and marketplace for third-party integrations.
+* Widely adopted by enterprises and startups alike.
+
+### GCP:
+* 
+### MS Azure:
