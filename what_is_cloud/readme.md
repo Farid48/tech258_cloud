@@ -24,7 +24,7 @@ Cloud allows for scalability and flexibility as cloud providers offer a range of
 ## The Four development models
 
 ### Private Cloud :
-A Cloud computing environment dedicated to a single organisation. All resources are isolated and are controlled by the single organisation.
+A Cloud computing environment dedicated to a single organisation. All resources are isolated and are controlled by the single organisation. It is be your own-dedicated cloud.
 
 ### Public Cloud :
 A type of computing where resources are offered by third-party provider, and are shared by organisations or individuals who want to use or buy these services. An example of this is the Google Cloud Platform, which provide a very scalable solution to organisations, as if they require more resources, they can pay a bit extra.
@@ -46,6 +46,7 @@ When an organisation uses cloud computing services from at least two cloud provi
 * Provides virtualised computing resources over the internet.
 * Users manage and control the operating systems, applications, and development frameworks. **offering users more direct control over their services.**
 * Offers scalability and flexibility in managing virtualised resources.
+* Would not be responsible to upgrade the physical hardware, only the software side (in a VM)
 * Example Providers: AWS EC2, Microsoft Azure VMs, Google Compute Engine.
 
 
@@ -54,6 +55,7 @@ When an organisation uses cloud computing services from at least two cloud provi
 * Offers a complete development and deployment environment in the cloud. 
 * Abstracts away the underlying infrastructure, focusing on building and deploying applications. **Making it easier to use and more flexibility.**
 * Provides pre-built development frameworks, middleware, and tools.
+* Dev focused service, write the code, and should not set up the environment
 * Example Providers: Heroku, Microsoft Azure App Service, Google App Engine.
 
 
@@ -72,7 +74,7 @@ In summary, IaaS provides virtualised resources for users to manage and control,
 * Cost Savings:
   * No upfront capital investment in hardware or infrastructure.
   * Pay-as-you-go pricing model allows businesses to only pay for the resources they use.
-* Scalability:
+* Scalability and elasticity:
   * Easily scale resources up or down based on demand.
   * Accommodate growth without the need for extensive hardware procurement and setup.
 * Flexibility and Accessibility:
@@ -101,15 +103,20 @@ In summary, IaaS provides virtualised resources for users to manage and control,
 * Ongoing costs for day-to-day business operations.
 * Examples: Rent, utilities, salaries, and cloud services.
 * Recorded on income statement, paid immediately, and flexible.
+* Allows you to be more agile.
 
 ### Capital Expenses (CapEx):
 * Investments in long-term assets with future benefits.
+* Typically one time purchases
 * Examples: Buildings, equipment, and infrastructure.
 * Recorded on balance sheet, require upfront expenditure, and depreciate over time.
+* Can be viable if there are promotions
+* 
+![img_5.png](images%2Fimg_5.png)
 
 ### How do they relate to Cloud Computing?
 
-* Cloud computing shifts from CapEx to OpEx model.
+* For the most part, OPex is better as in the long run, cloud can be cheaper as you do not need to maintain the electricity/ infrastructure.
 * Businesses pay for cloud services as operational expenses.
 * Reduces upfront investment in hardware and infrastructure.
 * Enables flexibility, scalability, and focus on innovation.
