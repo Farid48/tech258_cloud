@@ -37,15 +37,15 @@ When an organisation uses cloud computing services from at least two cloud provi
 ### Infrastructure as a Service (IaaS):
 
 * Provides virtualised computing resources over the internet.
-* Users manage and control the operating systems, applications, and development frameworks.
+* Users manage and control the operating systems, applications, and development frameworks. **offering users more direct control over their services.**
 * Offers scalability and flexibility in managing virtualised resources.
 * Example Providers: AWS EC2, Microsoft Azure VMs, Google Compute Engine.
 
 
 ### Platform as a Service (PaaS):
 
-* Offers a complete development and deployment environment in the cloud.
-* Abstracts away the underlying infrastructure, focusing on building and deploying applications.
+* Offers a complete development and deployment environment in the cloud. 
+* Abstracts away the underlying infrastructure, focusing on building and deploying applications. **Making it easier to use and more flexibility.**
 * Provides pre-built development frameworks, middleware, and tools.
 * Example Providers: Heroku, Microsoft Azure App Service, Google App Engine.
 
@@ -122,12 +122,32 @@ However, it is not always cheaper for the business to migrate. These costs can i
 * Compliance and Security requirements - May require additional investments to meet security requirement
 
 ## What Are the 3 Largest Cloud Providers? What makes them so popular?
-Currently, the biggest 3 cloud providers are Amazon Web Services (AWS), Google Cloud Platform (GCP) and Microsoft Azure. Together they take up 66% of the worldwide cloud infrastructure market.
+Currently, the biggest 3 cloud providers are Amazon Web Services (AWS), Google Cloud Platform (GCP) and Microsoft Azure. Together they take up 66% of the worldwide cloud infrastructure market. Each of these services have features that stand out and are appealing to different businesses.
+
+![img_2.png](images%2Fimg_2.png)
+
 ### AWS:
-* Extensive range of services and global infrastructure.
-* Strong ecosystem and marketplace for third-party integrations.
+* Extensive range of **services and global infrastructure.** (EC2, S3, RDS)
+* Strong **ecosystem** and marketplace for **third-party integrations**.
 * Widely adopted by enterprises and startups alike.
 
 ### GCP:
-* 
+* **Advanced data analytics** and **machine learning capabilities** with BigQuery and **TensorFlow**.
+* Emphasis on **open-source** technologies and **developer-friendly tools**.
+* Global network infrastructure optimised for performance and scalability.
+
 ### MS Azure:
+* Strong and heavy Integration with **Microsoft products and services**, such as Windows Server and Office 365.
+* Strong **hybrid cloud capabilities**, including Azure Stack and Azure Arc.
+* Comprehensive **compliance** and **security** offerings.
+
+## Best Cloud Provider? Why?
+
+From market share alone, you can see that AWS has a lot more usage compared to the other cloud providers. This is because:
+* AWS offers a **variety** of services, ranging from infrastructure, to storage and database technologies. 
+* It had a big head start out of the big 3, being more mature and showing **reliability**. It also means that it had a head start in d**eveloping infrastructure and service offerings**. It also means that there were more **experienced users** compared to other cloud platforms.
+* AWS excels at **scalability**, able to fluctuate according to demands.
+* AWS also has a strong reputation for **security**, and it also offers a variety of services to help with security
+* **Pay As You Go Pricing**  - Charging Customers based on their actual usage!
+
+![img_3.png](images%2Fimg_3.png)
