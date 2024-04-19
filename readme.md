@@ -6,7 +6,7 @@ This is a tutorial on how to create your own Virtual Machine on AWS, in which we
 
 1) First of all, you would need to have a valid AWS credentials. Once logged in, on the top there should be search bar where you should type up "EC2". EC2 stands for Elastic Compute Cloud, and is basically a virtual machine. A virtual machine is separate environment to your OS but it uses your systems resources such as storage and memory. As we are running this on AWS, this instance will be using AWS's resources to create this VM.
 
-![alt text](images\image.png)
+![image.png](images%2Fimage.png)
 
 2) Once the EC2 Service is open, press the bright orange button called "Launch Instance". You will then be put into a different menu where you will be required to edit to adjust this instance. First of all we need to give this instance an adequate name. For this example I will be calling it "tech258_farid_ec2_tutorial".
 
@@ -21,11 +21,11 @@ A machine Image is a snapshot or a template used to create VM instances in a clo
 
 For this tutorial, I will be using Ubuntu so that will bes selected for me. But if you require another OS, you can select them from the quick start menu. If you require a different server, you can go under the AMI heading and select one of those option, but for now I will be using the free tier.
 
-![alt text](images\image2.png)
+![image2.png](images%2Fimage2.png)
 
 4) Just below AMI's, there is a section called "Instance Type". This is quite important depending on the use for the VM. The more computing power you require, the more it will cost, so you should select a more advance instance type. For this scenario, we will be using the default called "t2.micro".
 
-![alt text](images/image3.png)
+![image3.png](images%2Fimage3.png)
 
 5) You should now be on the Key Pair (Login) section. This part is very important to securely connect to your instance.
    
@@ -33,11 +33,11 @@ For this tutorial, I will be using Ubuntu so that will bes selected for me. But 
 
 SSH stands for Secure Socket Shell. SSH is a protocol method for securely sending commands to a computer. SSH uses cryptography to authenticate and encrypt connections between devices. When creating SSH Keys, you are provided with two. One of them is known as the public key in which anyone can see but cannot get access to. This can be seen as a padlock. The second key that is generated is the private key which should be kept safe and nobody should have access to it. This can be seen as the key for the padlock, as to get access to the other side, you require both pairs.
 
-![alt text](images/image5.png)
+![image5.png](images%2Fimage5.png)
 
 Ensure you have your SSH key pairs stored securely in your .ssh folder. Make sure the names match with what you have selected on AWS.
 
-![alt text](images/image6.png)
+![image6.png](images%2Fimage6.png)
 
 6) Network Settings are very important to set up. This is so you can get access to your VM without having any issue.
 
@@ -49,11 +49,11 @@ In this scenario, we will be creating a new security group so that SSH and HTTP 
 
 Under "Inbound Security Group Rules", change some of the setting so that they match your needs. For example, change SSH's Source type to "My IP" so that traffic from your IP is only accepted, even if the person has the ssh key pairs.
 
-![alt text](images\image7.png)
+![image7.png](images%2Fimage7.png)
 
 7) Once all of that has been sorted out. You can launch your instance. This will take a few seconds. Once your instance has been successful, there should be a green bar at the top, which you should click the link inside to display your Instance Settings. This will launch a new tab, which you should wait for the status of your VM to be running. Click the highlighted link, this will expand the view of your instance, and then you can click connect towards the top right.
 
-![alt text](images\image8.png)
+![image8.png](images%2Fimage8.png)
 
 8) Once selecting Connect, you should be able to see how to connect to your SSH client. In this case we will be using Git Bash as our SSH client. Make sure you are in your ssh folder inside Git Bash and follow these commands to enter your instance.
    
@@ -67,18 +67,47 @@ ssh -i "tech258.pem" ubuntu@ec2-34-242-228-165.eu-west-1.compute.amazonaws.com
 
 You should now be in your Ubuntu Instance. There are still a few more commands to follow in order to create your web client.
 
-![alt text](image.png)
+![image.png](image.png)
 
+### Updating and Upgrading
 ```
 sudo apt update -y
 
-sudo apt upgrade -y
-
-sudo apt install nginx -y
-
-systemctl status nginx
+# "sudo" means Execute the following command as an administrator
+# "apt" is a package management tool used to manage software packages on the system
+# "update" checks if there are any availiable updates, required for the upgrade command
+# "y" responds yes to  all the prompts that may appear
 ```
 
-Copy the public IP to load your website. 
+```
+sudo apt upgrade -y
 
-When VM not in use, make sure to terminate it so no extra cost occur.
+# "Upgrade" Upgrades installed packages to their latest version, update command required before running this
+```
+### What is "nginx"? How do we install it?
+
+Nginx is an open-source web server software. It provides HTTPS server capabilities, and is mainly designed for maximum performance and stability. Can also function as a proxy server for email communication protocols, such as IMAP, POP3 and SMTP. To install "nginx" into our instance, the following command is required:
+```
+sudo apt install nginx -y
+
+# "install" used to install nwe software pakcages
+# "nginx" The package being installed. This is a popular open-soruce web server
+```
+
+### How to check if the package is running?
+```
+systemctl status nginx
+
+# "systemctl" is used to interact with the systen and service manage
+# "status" used to display the status of a specifc service
+
+```
+![Status.png](Status.png)
+
+After running the command above, you should be able to see green text if your software package is running.
+
+To load your website. Go to your EC2 instance, you should be able to see the public IP for the instance. Copy the public IP and paste it into the URL. It should load a default website, like the image below.
+
+![website.png](website.png)
+
+
