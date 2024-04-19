@@ -102,12 +102,12 @@ systemctl status nginx
 # "status" used to display the status of a specifc service
 
 ```
-![Status.png](Status.png)
+![Status.png](images/Status.png)
 
 After running the command above, you should be able to see green text if your software package is running.
 
 To load your website. Go to your EC2 instance, you should be able to see the public IP for the instance. Copy the public IP and paste it into the URL. It should load a default website, like the image below.
 
-![website.png](website.png)
+![website.png](images/website.png)
 
 
