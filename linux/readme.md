@@ -99,7 +99,7 @@ find all the lines where chicken was ued:
 sudo apt update -y  # Ensure this is saved inside a file with any name with the extension . sh
 ```
 
-You can run this script by typing `./FILENAME.sh
+You can run this script by typing `./FILENAME.sh`
 
 ![alt text](image.png)
 
@@ -115,3 +115,49 @@ write = +2     ------> CHMOD short form <br>
 execute = +1  
 
 [chmod calc](https://chmod-calculator.com/)
+
+
+# Linux Processes
+
+## Killing Processes:
+
+#### Gentle Killing:
+
+```
+kill -1
+```
+This command is like polity asking someone to stop. This means that sometimes it will fail to stop the processes
+
+#### Default killing:
+
+```
+kill -9
+```
+This is the default kill switch, even if you run `kill` on it's own, it will be this code. This will try kill all the children processes first, and then kill the parent node. This will try not to create any zombie nodes.
+
+#### Brute Force Killing:
+```
+kill -15
+```
+This is highly not recommended as it can create zombie processes, which are processes that aren't being used but are taking up memory. This will imidiately kill the parent node without going through to the children nodes.
+
+
+## Check all Processes:
+
+There are multiple commands you can use for this such as:
+
+```
+top
+```
+This lists all the current processes that are live, and in live time. You can them press SHIFT + M to the processes that are consuming more memory at the top. SHIFT + N will order it by ID, and SHIFT + P for processes.
+
+```
+ps aux
+```
+This is another command, however, it is not in a live view, and you cannot filter according to ID or most memory.
+
+```
+jobs -l
+```
+This will list all the current jobs, such as the `sleep` command. It will also list what is going on with them, such as processing, terminated or killed.
+
