@@ -1,5 +1,23 @@
 # Linux Commands
 
+- [Linux Commands](#linux-commands)
+  - [Check the current shell we are using](#check-the-current-shell-we-are-using)
+  - [Check History](#check-history)
+  - [List all the shells in the system](#list-all-the-shells-in-the-system)
+  - [Download a file](#download-a-file)
+  - [Move and Rename a file](#move-and-rename-a-file)
+  - [Copy and Remove Files](#copy-and-remove-files)
+    - [Task 1](#task-1)
+    - [Creating a script](#creating-a-script)
+      - [Example Script](#example-script)
+- [Linux Processes](#linux-processes)
+  - [Killing Processes:](#killing-processes)
+      - [Gentle Killing:](#gentle-killing)
+      - [Default killing:](#default-killing)
+      - [:warning: Brute Force Killing:](#warning-brute-force-killing)
+  - [Check all Processes:](#check-all-processes)
+
+
 ## Check the current shell we are using
 
 ```
@@ -135,7 +153,7 @@ kill -15
 ```
 This is the default kill switch, even if you run `kill` on it's own, it will be this code. This will try kill all the children processes first, and then kill the parent node. This will try not to create any zombie nodes.
 
-#### Brute Force Killing:
+#### :warning: Brute Force Killing:
 ```
 kill -9
 ```

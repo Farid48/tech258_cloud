@@ -90,6 +90,7 @@ clone the repo from github
 git clone (https://github.com/Farid48/tech258_app.git) # example - replace the brackets with your repo
 all of it should appear
 
-![alt text](image.png)
 
-![alt text](image-1.png)
+![alt text](images/image.png)
+
+![alt text](images/image-1.png)
