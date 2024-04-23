@@ -37,6 +37,11 @@ curl -fsSL https://deb.nodesource.com/setup_20.x | sudo DEBIAN_FRONTEND=noninter
 sudo DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 echo installed node.js
 
+# installing pm2 
+echo installing PM2...
+sudo npm install -g pm2
+echo PM2 installed
+
 # checking version
 echo checking node js version...
 node -v
@@ -51,12 +56,15 @@ echo done cloning repo...
 cd ~/tech258_app/app/
 echo inside app directory
 echo installing npm
-npm install
+sudo npm install
 echo installed npm
+
+# stop all running instances
+sudo pm2 stop all
 
 # Running
 echo starting....
-npm start &
+sudo pm2 start app.js
 
 echo done
 
@@ -70,18 +78,18 @@ copy file from my system:
 
 scp -i ~/.ssh/tech258/pem -r ~/app_code/sparta_test_app /ubuntu@3.249.37.164:~/app
 
-![alt text](image.png)
+
 
 
 copy files from github:
 
-![alt text](image-1.png)
-
-Initalise the app folder to be a repo
+Initialise the app folder to be a repo
 clone the repo from github
 
 ```
 git clone (https://github.com/Farid48/tech258_app.git) # example - replace the brackets with your repo
 all of it should appear
 
+![alt text](image.png)
 
+![alt text](image-1.png)

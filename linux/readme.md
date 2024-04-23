@@ -131,13 +131,13 @@ This command is like polity asking someone to stop. This means that sometimes it
 #### Default killing:
 
 ```
-kill -9
+kill -15
 ```
 This is the default kill switch, even if you run `kill` on it's own, it will be this code. This will try kill all the children processes first, and then kill the parent node. This will try not to create any zombie nodes.
 
 #### Brute Force Killing:
 ```
-kill -15
+kill -9
 ```
 This is highly not recommended as it can create zombie processes, which are processes that aren't being used but are taking up memory. This will imidiately kill the parent node without going through to the children nodes.
 
